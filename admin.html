@@ -12,11 +12,24 @@
   </header>
 
   <main>
+    <h2>إدارة المنتجات</h2>
     <p>عدد المنتجات: <span id="product-count">0</span></p>
-    <div id="product-list">
-      <!-- قائمة المنتجات ستظهر هنا -->
-    </div>
-    <p>لإضافة منتج جديد عدل ملف JavaScript أو ربطه لاحقًا بـ Firebase</p>
+
+    <div id="product-list"></div>
+
+    <h3>إضافة منتج جديد</h3>
+    <form id="add-product-form">
+      <input type="text" id="name" placeholder="اسم المنتج" required>
+      <input type="number" id="price" placeholder="السعر" required>
+      <input type="number" id="discountPrice" placeholder="سعر التخفيض">
+      <input type="checkbox" id="showDiscount"> إظهار التخفيض
+      <input type="text" id="description" placeholder="وصف المنتج" required>
+      <input type="text" id="image" placeholder="رابط الصورة" required>
+      <input type="text" id="affiliateLink" placeholder="رابط الأفلييت" required>
+      <button type="submit">إضافة المنتج</button>
+    </form>
   </main>
+
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>
