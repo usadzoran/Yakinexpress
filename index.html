@@ -3,31 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Affiliate Mega Store</title>
+  <title>Yakin Express - متجر أفلييت احترافي</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Header -->
   <header>
-    <h1>Affiliate Mega Store</h1>
-    <img src="images/logo.png" alt="Logo" class="logo">
+    <div class="top-bar">
+      <div class="logo-container">
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <h1>Yakin Express</h1>
+      </div>
+      <div class="lang-switcher">
+        <button onclick="switchLang('ar')">العربية</button>
+        <button onclick="switchLang('en')">English</button>
+      </div>
+    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>أفضل المنتجات من الملابس إلى الإلكترونيات!</h2>
+        <p>تصفح منتجاتنا وابدأ التسوق الآن مع روابط الأفلييت</p>
+      </div>
+    </section>
   </header>
 
-  <!-- إعلان علوي -->
-  <div class="ad" id="ad-top">اعلان علوي</div>
+  <!-- Ads Top -->
+  <div class="ad" id="ad-top">إعلان علوي</div>
 
+  <!-- Products Grid -->
   <main>
-    <h2>المنتجات</h2>
+    <h2>المنتجات المميزة</h2>
     <div class="products" id="products">
       <!-- المنتجات من Firebase -->
     </div>
   </main>
 
-  <div class="ad" id="ad-bottom">اعلان سفلي</div>
+  <!-- Ads Bottom -->
+  <div class="ad" id="ad-bottom">إعلان سفلي</div>
 
+  <!-- Footer Menu -->
   <footer>
-    <p>© 2026 Affiliate Store</p>
+    <nav class="footer-menu">
+      <a href="#products">المنتجات</a>
+      <a href="#ad-top">اعلانات</a>
+      <a href="admin.html">لوحة التحكم</a>
+    </nav>
+    <p>© 2026 Yakin Express</p>
   </footer>
 
+  <!-- Firebase + JS -->
   <script type="module" src="js/main.js"></script>
 </body>
 </html>
